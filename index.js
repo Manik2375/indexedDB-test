@@ -37,10 +37,10 @@ async function addVidToDatabase() {
 	const res = await fetch("./vid.mp4");
 	const blob = await res.blob();
 
-    const obj = {
-        blob,
-        page
-    }
+	const obj = {
+		blob,
+		page,
+	};
 
 	let transaction = dataBase.transaction("video", "readwrite");
 	let objStore = transaction.objectStore("video");
