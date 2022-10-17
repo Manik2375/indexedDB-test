@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 1em;
+}
+
+video {
+    width: min(50em, 90%);
+    height: auto;
+}
